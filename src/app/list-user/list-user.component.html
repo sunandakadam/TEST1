@@ -1,0 +1,23 @@
+<div *ngIf="ifUserSelected" class="margin-top">
+  <p >User Searched :<span>{{userName}}</span></p>
+
+</div>
+
+<table class="margin-top">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>userName</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Website</th>
+  </tr>
+  <tr *ngFor="let data of this.usersData" (click)="onUserClick(data)">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+    <td>{{data.username}}</td>
+    <td>{{data.email}}</td>
+    <td>{{data.phone}}</td>
+    <td>{{data.website}}</td>
+  </tr>
+  </table>
