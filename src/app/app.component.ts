@@ -19,7 +19,7 @@ export class AppComponent {
     // console.log('this.name in app compo',this.name)
   }
   onSearchClick(){
-	  //test git
+	  //test git added in branch
 	  
     this.name=this.newName;
     console.log('this.name in app compo',this.name);
