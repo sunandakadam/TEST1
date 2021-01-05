@@ -19,6 +19,8 @@ export class AppComponent {
     // console.log('this.name in app compo',this.name)
   }
   onSearchClick(){
+	  //test git
+	  
     this.name=this.newName;
     console.log('this.name in app compo',this.name);
     this._userService.getUsers(this.name);
